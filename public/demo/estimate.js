@@ -23,9 +23,9 @@ form.addEventListener("submit", (event) => {
   const size = data.get("size");
   if (!service || !Object.hasOwn(sizes, size)) return;
   const haulAway = data.has("debris");
+  result.hidden = false;
   total.textContent = currency.format(service.price * sizes[size] + (haulAway ? 60 : 0));
   description.textContent = `${service.label} · ${size} property${haulAway ? " · debris haul-away included" : ""}. Fictional example pricing.`;
-  result.hidden = false;
 });
 
 form.addEventListener("change", () => {
