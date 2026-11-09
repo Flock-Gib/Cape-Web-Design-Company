@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A fictional Cape Cod landscaping website demo featuring illustrated gardens and an on-page sample estimate calculator. Not a real business.">
+  <meta name="theme-color" content="#172e3b">
+  <title>Salt &amp; Soil | Fictional landscaping demo</title>
+  <link rel="icon" href="/images/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/demo/estimate.js" defer></script>
+</head>
+<body class="demo-body">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="demo-banner"><strong>Fictional landscaping demo — not a real business.</strong><a href="/">Back to web design services <span aria-hidden="true">↗</span></a></div>
+  <header class="site-header wrap">
+    <a class="brand demo-brand" href="/demo/"><span>Salt &amp; Soil<span class="brand-sub">CAPE COD LANDSCAPING · DEMO</span></span></a>
+    <nav aria-label="Demo navigation"><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#estimate">Sample estimate <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="landscape-hero wrap" aria-labelledby="demo-hero-title">
+      <div><p class="eyebrow">COASTAL GARDENS. EVERYDAY JOY.</p><h1 id="demo-hero-title">A little more<br>room to bloom.</h1><p>From a welcoming front walk to a quiet backyard corner, imagine a landscape that feels right at home on the Cape.</p><a class="button" href="#estimate">Try a sample estimate <span aria-hidden="true">↓</span></a><p class="small-note">An interactive example. No request is sent.</p></div>
+      <img src="/images/garden.svg" width="900" height="650" alt="Original illustration of a Cape-style cottage with a curved garden path and hydrangeas">
+    </section>
+    <section class="section wrap demo-section" id="services" aria-labelledby="landscape-services-title">
+      <div class="section-heading"><div><p class="eyebrow">THE DEMO SERVICES</p><h2 id="landscape-services-title">Good things grow here.</h2></div><p>Example offerings for a fictional small landscaping business. These services are not available to book.</p></div>
+      <div class="service-grid landscape-services">
+        <article class="service-card"><p class="eyebrow">01 / A FRESH START</p><h3>Seasonal cleanup</h3><p>A tidy reset for garden beds, fallen leaves, and the little corners that need some care.</p></article>
+        <article class="service-card"><p class="eyebrow">02 / ROOM TO GROW</p><h3>Garden bed refresh</h3><p>Thoughtful planting, defined edges, and fresh mulch for a welcoming coastal garden.</p></article>
+        <article class="service-card"><p class="eyebrow">03 / THE EVERYDAY</p><h3>Lawn care</h3><p>A simple mow and edge to keep outdoor spaces looking cared for through the season.</p></article>
+      </div>
+    </section>
+    <section class="section wrap demo-section" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-heading"><div><p class="eyebrow">AN ILLUSTRATED GALLERY</p><h2 id="gallery-title">A few coastal daydreams.</h2></div><p>Original illustrations for this demo, not photographs of completed client projects.</p></div>
+      <div class="gallery">
+        <figure><img src="/images/garden.svg" width="900" height="650" alt="Illustrated front garden with purple hydrangeas framing a stone walkway" loading="lazy"><figcaption>A welcoming first impression<span>Cottage garden / fictional concept</span></figcaption></figure>
+        <figure><img src="/images/patio.svg" width="900" height="650" alt="Illustrated stone patio with two chairs, coastal grasses, and a distant ocean" loading="lazy"><figcaption>A place to slow down<span>Coastal patio / fictional concept</span></figcaption></figure>
+        <figure><img src="/images/beds.svg" width="900" height="650" alt="Illustrated curved planting beds with flowers, shrubs, and a wooden fence" loading="lazy"><figcaption>A little seasonal color<span>Garden bed / fictional concept</span></figcaption></figure>
+      </div>
+    </section>
+    <section class="estimate-section" id="estimate" aria-labelledby="estimate-title">
+      <div class="wrap estimate-grid">
+        <div><p class="eyebrow">TRY IT OUT / NO SIGN-UP</p><h2 id="estimate-title">What might your<br>garden have in mind?</h2><p>Choose an example service and property size to see a sample estimate right here. Nothing is submitted, saved, or booked.</p><p>These are fictional demo prices, not a quote or an offer. A real landscaping estimate would require a site visit and agreed scope.</p></div>
+        <form class="estimate-form" id="estimate-form">
+          <label for="service">Example service</label>
+          <select id="service" name="service"><option value="cleanup">Seasonal cleanup</option><option value="beds">Garden bed refresh</option><option value="lawn">Lawn care visit</option></select>
+          <fieldset><legend>Example property size</legend><div class="radio-options"><label><input type="radio" name="size" value="small" checked> Small</label><label><input type="radio" name="size" value="medium"> Medium</label><label><input type="radio" name="size" value="large"> Large</label></div></fieldset>
+          <label class="checkbox-label"><input type="checkbox" name="debris" id="debris"> Add debris haul-away (sample $60)</label>
+          <div class="form-actions"><button class="button" type="submit" id="calculate" disabled>See sample estimate <span aria-hidden="true">↗</span></button><button type="reset" class="reset-button">Reset</button></div>
+          <noscript><p>This sample calculator needs JavaScript. No information is submitted; enable JavaScript to try it.</p></noscript>
+          <div class="estimate-result" id="estimate-result" hidden>
+            <h3>Your sample estimate</h3>
+            <output id="estimate-total" for="service debris" aria-live="polite"></output>
+            <p id="estimate-description"></p>
+            <p><strong>Demo only.</strong> This is not a real quote. No request has been sent.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="section wrap contact" aria-labelledby="demo-end-title"><p class="eyebrow">LIKE THE SIMPLE APPROACH?</p><h2 id="demo-end-title">Imagine this clarity<br>for your business.</h2><p>This is a fictional example of the kind of small-business website I can build.</p><a class="button" href="/#quote">Back to web design services <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="site-footer wrap demo-footer"><span>Salt &amp; Soil — a fictional landscaping demo, not a real business.</span><a href="/">Web design services <span aria-hidden="true">↗</span></a></footer>
+</body>
+</html>
