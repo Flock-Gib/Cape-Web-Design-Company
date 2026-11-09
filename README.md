@@ -23,11 +23,6 @@ Cloudflare deployment and domain connection are intentionally left for review.
 
 - Replace `[Your Full Legal Name]` in `public/index.html` with the business owner's
   full legal name.
-- Replace **every** `[Quote Form URL]` in `public/index.html` with the real
-  HTTPS quote form URL. Buttons currently show an on-page setup notice instead
-  of navigating to the placeholder. This guard stops applying after replacement.
-- Replace `[Business Email]` in `public/index.html` with the business email;
-  optionally wrap it in a `mailto:` link.
 - Confirm pricing, scope, payment terms, and availability before publishing.
   Payment instructions belong on invoices, not this website.
 - Verify the selected hosting provider's current free-plan eligibility and limits.
@@ -37,12 +32,23 @@ The landscaping business, artwork, service descriptions, and calculator prices
 are fictional examples, not a real business or an offer. The calculator stays
 on the page and collects no contact information or payments.
 
+## Quote and contact links
+
+All six main-site quote links open the public form at
+https://tally.so/r/2jB6xp using ordinary links, including without JavaScript.
+The contact email is stjohngibson@gmail.com with a matching `mailto:` link.
+Existing button and text-link styles are retained. The fictional landscaping
+demo's estimate calculator stays on its own page and never submits to Tally.
+
 ## Review checklist
 
 - Follow header, service, demo, contact, and return-home links.
 - Check phone and desktop widths, keyboard focus, and reduced-motion preference.
 - Try every demo service and property size, optional cleanup, and reset.
-- Confirm quote placeholders show the setup notice without leaving the page.
+- Confirm every main-site quote link opens the Tally form and the contact email
+  uses the matching `mailto:` link, including on mobile and without JavaScript.
+- Confirm the demo estimate calculator still calculates and resets locally
+  without opening or submitting to Tally.
 - Check the custom 404 through Wrangler, including a nested nonexistent path.
 
 All artwork is original SVG in `public/images/`. The demo shares the stylesheet
