@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <title>Private workspace | Cape Cod Web Design</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/admin/admin.css">
+  <script type="module" src="/admin/app.js"></script>
+</head>
+<body class="admin">
+  <a class="skip-link" href="#main">Skip to workspace</a>
+  <header class="admin-header">
+    <a class="brand" href="/">CAPE COD<span class="brand-sub">WEB DESIGN / PRIVATE WORKSPACE</span></a>
+    <button id="sign-out" class="secondary" hidden>Sign out</button>
+  </header>
+  <main id="main">
+    <div id="notice" role="status" aria-live="polite"></div>
+    <section id="login" class="panel login">
+      <p class="eyebrow">ADMIN ACCESS ONLY</p>
+      <h1>Your business, organized.</h1>
+      <p>Sign in to manage inquiries, projects, and bookkeeping. This is not a payment processor. Refreshing this page requires signing in again.</p>
+      <p id="setup">Loading secure sign-in...</p>
+      <form id="login-form" hidden>
+        <label>Email<input name="email" type="email" autocomplete="username" required maxlength="320"></label>
+        <label>Password<input name="password" type="password" autocomplete="current-password" required></label>
+        <button class="button" type="submit">Sign in</button>
+      </form>
+    </section>
+    <section id="workspace" hidden>
+      <nav class="tabs" aria-label="Workspace">
+        <button data-view="home" aria-current="page">Home</button>
+        <button data-view="orders">Orders</button>
+        <button data-view="completed">Completed</button>
+        <button data-view="new">New Inquiry</button>
+        <button id="refresh" class="secondary">Refresh records</button>
+      </nav>
+      <div id="content"></div>
+    </section>
+    <noscript><p class="panel">JavaScript is required for secure sign-in and this private dashboard. Public pages still work without it.</p></noscript>
+  </main>
+</body>
+</html>

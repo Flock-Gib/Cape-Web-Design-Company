@@ -53,3 +53,12 @@ demo's estimate calculator stays on its own page and never submits to Tally.
 
 All artwork is original SVG in `public/images/`. The demo shares the stylesheet
 at `public/styles.css`; its small calculator is in `public/demo/estimate.js`.
+
+## Private admin workspace
+
+`/admin/` provides Supabase email/password sign-in, an allowlisted order tracker,
+payment bookkeeping and project checklists. It is not linked in public navigation.
+It uses the same static deployment with no build step. Configuration is initially
+placeholder-only; follow [docs/admin-setup.md](docs/admin-setup.md) for the additive
+SQL migration, Auth setup, public browser configuration and preview checks.
+Do not enter real client data until the policies and your access are verified.
